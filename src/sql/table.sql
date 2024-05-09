@@ -1,8 +1,8 @@
 
-DROP DATABASE IF EXISTS service_sation_management;
-CREATE DATABASE service_sation_management;
+DROP DATABASE IF EXISTS service_station_management;
+CREATE DATABASE service_station_management;
 
-\c  service_sation_management;
+\c  service_station_management;
 
 CREATE TABLE IF NOT EXISTS stations
 (
@@ -30,6 +30,6 @@ CREATE TABLE IF NOT EXISTS transactions
     type   VARCHAR(50) NOT NULL,
     quantity DECIMAL(10, 2),
     amount DECIMAL(10, 2) NOT NULL,
-    date_transaction TIMESTAMP   NOT NULL,
+    date_transaction TIMESTAMP   NOT NULL
     );
 
